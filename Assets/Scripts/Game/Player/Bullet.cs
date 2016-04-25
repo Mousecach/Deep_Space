@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour {
 	{
 		TR.position += TR.forward * Speed * Time.deltaTime;
 	}
-	//
+
 	void OnCollisionEnter(Collision collision)
 	{
 		//ДОБАВЛЯЕМ ДАМАГУ!!!!
