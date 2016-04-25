@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: b1b0778c30bebde4b91256d44e020350
+timeCreated: 1459783350
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Circle.001
+    100002: Circle.002
+    100004: Circle.003
+    100006: Circle.004
+    100008: Circle.006
+    100010: Circle.007
+    100012: Circle.008
+    100014: Circle.009
+    100016: Circle.010
+    100018: Circle.011
+    100020: Circle.012
+    100022: Circle.013
+    100024: Circle.014
+    100026: Circle.015
+    100028: Circle.016
+    100030: Circle.017
+    100032: Circle.018
+    100034: Circle.019
+    100036: Circle.020
+    100038: Circle.021
+    100040: Cube.001
+    100042: Cube.002
+    100044: //RootNode
+    100046: Sphere
+    100048: Sphere.001
+    400000: Circle.001
+    400002: Circle.002
+    400004: Circle.003
+    400006: Circle.004
+    400008: Circle.006
+    400010: Circle.007
+    400012: Circle.008
+    400014: Circle.009
+    400016: Circle.010
+    400018: Circle.011
+    400020: Circle.012
+    400022: Circle.013
+    400024: Circle.014
+    400026: Circle.015
+    400028: Circle.016
+    400030: Circle.017
+    400032: Circle.018
+    400034: Circle.019
+    400036: Circle.020
+    400038: Circle.021
+    400040: Cube.001
+    400042: Cube.002
+    400044: //RootNode
+    400046: Sphere
+    400048: Sphere.001
+    2300000: Circle.001
+    2300002: Circle.002
+    2300004: Circle.003
+    2300006: Circle.004
+    2300008: Circle.006
+    2300010: Circle.007
+    2300012: Circle.008
+    2300014: Circle.009
+    2300016: Circle.010
+    2300018: Circle.011
+    2300020: Circle.012
+    2300022: Circle.013
+    2300024: Circle.014
+    2300026: Circle.015
+    2300028: Circle.016
+    2300030: Circle.017
+    2300032: Circle.018
+    2300034: Circle.019
+    2300036: Circle.020
+    2300038: Circle.021
+    2300040: Cube.001
+    2300042: Cube.002
+    2300044: Sphere
+    2300046: Sphere.001
+    3300000: Circle.001
+    3300002: Circle.002
+    3300004: Circle.003
+    3300006: Circle.004
+    3300008: Circle.006
+    3300010: Circle.007
+    3300012: Circle.008
+    3300014: Circle.009
+    3300016: Circle.010
+    3300018: Circle.011
+    3300020: Circle.012
+    3300022: Circle.013
+    3300024: Circle.014
+    3300026: Circle.015
+    3300028: Circle.016
+    3300030: Circle.017
+    3300032: Circle.018
+    3300034: Circle.019
+    3300036: Circle.020
+    3300038: Circle.021
+    3300040: Cube.001
+    3300042: Cube.002
+    3300044: Sphere
+    3300046: Sphere.001
+    4300000: Cube.002
+    4300002: Cube.001
+    4300004: Circle.021
+    4300006: Circle.020
+    4300008: Circle.019
+    4300010: Circle.018
+    4300012: Circle.017
+    4300014: Circle.016
+    4300016: Circle.015
+    4300018: Circle.014
+    4300020: Circle.013
+    4300022: Circle.012
+    4300024: Circle.011
+    4300026: Circle.010
+    4300028: Circle.009
+    4300030: Circle.008
+    4300032: Circle.007
+    4300034: Circle.006
+    4300036: Circle.004
+    4300038: Circle.003
+    4300040: Circle.002
+    4300042: Circle.001
+    4300044: Sphere.001
+    4300046: Sphere
+    7400000: Cube.002|Cube.002Action
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
