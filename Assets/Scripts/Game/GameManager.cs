@@ -1,16 +1,29 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour 
+{
+	public static GameManager Instance;
 
-	int EnemyCounter = 0;
+	public int EnemyCounter = 0;
+	int score = 0;
 	Transform TR;
 	Transform SpawnPoint;
+	public GameObject Player;
 
 	public GameObject Enemy;
 
+	public int Score
+	{
+		get
+		{
+			return score;
+		}
+	}
+
 	void Start()
 	{
+		Instance = this;
+
 		Invoke ("SpawnEnemy", 1);
 		TR = transform;
 
@@ -26,5 +39,15 @@ public class GameManager : MonoBehaviour {
 		Instantiate (Enemy, SpawnPoint.position, SpawnPoint.rotation);
 
 		Invoke ("SpawnEnemy", Random.Range (1f, 3f));
+	}
+
+	public void EnemyDown(int id = 0)
+	{
+		EnemyCounter--;
+
+		if(id == 0)
+		{
+			score += 10;
+		}
 	}
 }
