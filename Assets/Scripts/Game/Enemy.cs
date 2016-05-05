@@ -5,7 +5,9 @@ public class Enemy : MonoBehaviour {
 
 	int HP = 150;
 	public int id = 0;
-	public int RotationSpeed = 2;
+	public float RotationSpeed = 3;
+	public float MovementSpeed = 1;
+	public int StopDistance = 5;
 
 	bool IsDead = false;
 
@@ -43,14 +45,16 @@ public class Enemy : MonoBehaviour {
 	{
 		float Distanse = Vector3.Distance (TR.position, Player.position);
 
-		if(Distanse <= 10)
+		if(Distanse <= StopDistance)
 		{
 
 		}
 		else
 		{
-			TR.position += TR.forward * 0.1f;
-			TR.rotation = Quaternion.Slerp(TR.rotation, Quaternion.LookRotation (Player.position - TR.position), RotationSpeed * Time.deltaTime);
+			TR.position += TR.forward * MovementSpeed * Time.deltaTime;
 		}
+
+
+		TR.rotation = Quaternion.Slerp(TR.rotation, Quaternion.LookRotation (Player.position - TR.position), RotationSpeed * Time.deltaTime);
 	}
 }

@@ -13,6 +13,8 @@ public class Orbit : MonoBehaviour {
 
 	MovementController MC;
 	RotationController RC;
+
+	PlayerStatistic PS;
 	//bool PlanetHere = false;
 	// Use this for initialization
 	void Start () 
@@ -22,6 +24,8 @@ public class Orbit : MonoBehaviour {
 
 		MC = GetComponent<MovementController> ();
 		RC = GetComponent<RotationController> ();
+
+		PS = GetComponent<PlayerStatistic> ();
 	}
 
 	void SetControllers(bool Value)
@@ -52,6 +56,10 @@ public class Orbit : MonoBehaviour {
 					SetControllers (false);
 				}
 			}
+		}
+		if(OnOrbit)
+		{
+			PS.Restore();
 		}
 	}
 

@@ -17,11 +17,11 @@ public class RotationController : MonoBehaviour
 	void FixedUpdate () 
 	{
 		float oZRotationCurrentSpeed = 0f;
-		if(Input.GetKey(KeyCode.Q))
+		if(Input.GetKey(KeyCode.E))
 		{
 			oZRotationCurrentSpeed = -oZRotationSpeed * Time.deltaTime;
 		}
-		if(Input.GetKey(KeyCode.E))
+		if(Input.GetKey(KeyCode.Q))
 		{
 			oZRotationCurrentSpeed = oZRotationSpeed * Time.deltaTime;
 		}

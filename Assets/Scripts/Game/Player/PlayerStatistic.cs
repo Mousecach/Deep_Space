@@ -7,7 +7,11 @@ public class PlayerStatistic : MonoBehaviour
 	[SerializeField]
 	int HP = 100;
 	[SerializeField]
+	int Shield = 100;
+	[SerializeField]
 	Image HPImage;
+	[SerializeField]
+	Image ShieldImage;
 
 	public YouDie Die;
 
@@ -28,10 +32,6 @@ public class PlayerStatistic : MonoBehaviour
 	public void ApplyDamage(int Damage)
 	{
 		SetDeltaHP (-Damage);
-		if(HP <= 0)
-		{
-			DIE ();
-		}
 	}
 
 	void DIE()
@@ -44,7 +44,7 @@ public class PlayerStatistic : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		if(HP < 100)
+		if(HP < 100 || Shield < 100)
 		{
 			Delay -= Time.deltaTime;
 			if (Delay <= 0) 
@@ -53,11 +53,60 @@ public class PlayerStatistic : MonoBehaviour
 				Delay = EtalonDelay;
 			}
 		}
+		UpdateUI ();
 	}
 
 	void SetDeltaHP(int HPDelta)
 	{
-		HP += HPDelta;
+		if(HPDelta > 0)
+		{
+			if(HP >= 100)
+			{//Нужно восстанавливать щит
+				Shield += HPDelta;
+				if(Shield > 100)
+				{
+					Shield = 100;
+				}
+			}
+			else
+			{//Нужно восстанавливать жизни
+				HP += HPDelta;
+				if(HP > 100)
+				{
+					HP = 100;
+				}
+			}
+		}
+		else
+		{
+			if(Shield == 0)
+			{//Нужно отнимать жизни
+				HP += HPDelta;
+				if (HP <= 0) 
+				{
+					DIE ();
+				}
+			}
+			else
+			{//Отнимаем щит
+				Shield += HPDelta;
+				if (Shield <= 0) 
+				{
+					Shield = 0;
+				}
+			}
+		}
+	}
+
+	public void Restore()
+	{
+		HP = 100;
+		Shield = 100;
+	}
+
+	void UpdateUI()
+	{
+		ShieldImage.fillAmount = Shield / 100f;
 		HPImage.fillAmount = HP / 100f;
 	}
 }
