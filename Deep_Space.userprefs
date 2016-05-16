@@ -1,14 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game\Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game\GameManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game\Enemy.cs" Line="57" Column="3" />
-      <File FileName="Assets\Scripts\Game\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\Player\PlayerStatistic.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\Player\Bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\Helpers\Score.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\Player\MovementController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\Player\RotationController.cs" Line="24" Column="29" />
+      <File FileName="Assets\Scripts\Game\Helpers\RocketAI.cs" Line="27" Column="8" />
+      <File FileName="Assets\Scripts\Game\GameManager.cs" Line="35" Column="35" />
+      <File FileName="Assets\Scripts\Game\Player\Shooting.cs" Line="68" Column="58" />
+      <File FileName="Assets\Scripts\Game\Helpers\Blink.cs" Line="20" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
