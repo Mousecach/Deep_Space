@@ -6,7 +6,9 @@ public class GameManager : MonoBehaviour
 	public static GameManager Instance;
 
 	public int EnemyCounter = 0;
-	public int MaxEnemies = 15;
+	int BossCount = 0;
+	public int TotalEnemies = 0;
+	public int MaxEnemies = 20;
 	int score = 0;
 	Transform TR;
 	Transform SpawnPoint;
@@ -15,7 +17,8 @@ public class GameManager : MonoBehaviour
 	public Text RocketTime;
 	public GameObject RocketInfo;
 	public float TimeToShoot;
-
+	
+	public GameObject Boss;
 	public GameObject Enemy;
 
 	public int Score
@@ -61,6 +64,8 @@ public class GameManager : MonoBehaviour
 		TR = transform;
 
 		SpawnPoint = TR.GetChild (0).transform;
+
+		Cursor.visible = false;
 	}
 
 	void SpawnEnemy()
@@ -68,10 +73,23 @@ public class GameManager : MonoBehaviour
 		if(EnemyCounter < MaxEnemies)
 		{
 			EnemyCounter++;
+			TotalEnemies++;
 
 			TR.Rotate (Random.Range (0, 360), Random.Range (0, 360), Random.Range (0, 360));
 
 			Instantiate (Enemy, SpawnPoint.position, SpawnPoint.rotation);
+		}
+
+		if((TotalEnemies % 25 == 0) && (BossCount < 1))
+		{
+			EnemyCounter++;
+			TotalEnemies++;
+
+			BossCount++;
+
+			TR.Rotate (Random.Range (0, 360), Random.Range (0, 360), Random.Range (0, 360));
+			
+			Instantiate (Boss, SpawnPoint.position, SpawnPoint.rotation);
 		}
 
 		Invoke ("SpawnEnemy", Random.Range (1f, 3f));
@@ -84,6 +102,11 @@ public class GameManager : MonoBehaviour
 		if(id == 0)
 		{
 			score += 10;
+		}
+		else if(id == 1)
+		{
+			score += 500;
+			BossCount--;
 		}
 	}
 }

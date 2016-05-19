@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour {
 
-	int HP = 150;
+	public int HP = 150;
 	public int id = 0;
 	public float RotationSpeed = 3;
 	public float MovementSpeed = 1;

@@ -23,7 +23,7 @@ public class RocketAI : MonoBehaviour {
 			TR.position += TR.forward * 10 * Time.deltaTime;
 			if(Vector3.Distance (TR.position, Target.position) < 1)
 			{
-				Target.gameObject.GetComponent<Enemy>().ApplyDamage (9000);
+				Target.gameObject.GetComponent<Enemy>().ApplyDamage (150);
 				Destroy (gameObject);
 			}
 		}

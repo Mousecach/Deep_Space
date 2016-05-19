@@ -2,6 +2,12 @@
 using System.Collections;
 
 public class Menu : MonoBehaviour {
+
+	void Start()
+	{
+		Cursor.visible = true;
+	}
+
 	public void CloseApp()
 	{
 		Application.Quit ();

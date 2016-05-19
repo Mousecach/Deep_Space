@@ -15,6 +15,7 @@ public class YouDie : MonoBehaviour {
 	{
 		ScreenDead.SetActive(true);
 		MainUI.SetActive (false);
+		Cursor.visible = true;
 		//Time.timeScale = 0;
 	}
 

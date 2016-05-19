@@ -51,7 +51,7 @@ public class Shooting : MonoBehaviour {
 						Object obj = Instantiate (Rocket, RocketSpawnPoint.position, RocketSpawnPoint.rotation);
 						RocketAI CurrentEnemy = ((GameObject)obj).GetComponent<RocketAI>();
 						CurrentEnemy.Target = Hit.collider.gameObject.transform;
-						GameManager.Instance.TimeToShoot = 5;
+						GameManager.Instance.TimeToShoot = 30;
 					}
 				}
 			}
